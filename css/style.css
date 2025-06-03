@@ -23,11 +23,12 @@
 }
 
 /* Custom Scrollbar */
-html::-webkit-scrollbar{
+html::-webkit-scrollbar {
     width: 0.5rem;
     background: transparent;
 }
-html::-webkit-scrollbar-thumb{
+
+html::-webkit-scrollbar-thumb {
     background: #d1a670;
 }
 
@@ -314,23 +315,6 @@ header.shadow {
     margin-bottom: 1.5rem;
 }
 
-.learn-more {
-    display: inline-flex;
-    align-items: self-end;
-    color: var(--text-color);
-}
-
-.learn-more .bx {
-    font-size: 1.2rem;
-    margin-left: 0.4rem;
-    transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-.learn-more:hover .bx {
-    margin-left: 0.8rem;
-    transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
 .about-data {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(290px, auto));
@@ -522,6 +506,13 @@ header.shadow {
     color: #ffffff;
 }
 
+/* Ubicacion */
+iframe {
+    max-width: 100%;
+    width: 600px;
+    height: 450px;
+}
+
 /* Footer */
 .footer {
     background: var(--text-alter-color);
@@ -586,7 +577,8 @@ header.shadow {
     color: var(--bg-color);
     background: var(--text-alter-color);
 }
-.loader{
+
+.loader {
     position: fixed;
     top: 0;
     left: 0;
@@ -597,9 +589,11 @@ header.shadow {
     place-items: center;
     z-index: 1000;
 }
-.loader img{
+
+.loader img {
     width: 120px;
 }
+
 /* Making Responsive */
 @media (max-width: 985px) {
     .container {
